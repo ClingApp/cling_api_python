@@ -44,10 +44,10 @@ class UserExtend(DjangoUser):
     """User with app settings."""
     # Use UserManager to get the create_user method, etc.
     # DjangoUser have next fields:
-    # login = models.CharField(unique=True)
-    # password = models.CharField()
-    # first_name = models.CharField()
-    # last_name = models.CharField(
+    # username
+    # password
+    # first_name
+    # last_name
     middle_name = models.CharField(max_length=50, null=True, blank=True)
     phone = models.CharField(max_length=20, null=True, blank=True)
     is_deleted = models.BooleanField(default=False)
